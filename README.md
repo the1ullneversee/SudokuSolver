@@ -16,5 +16,7 @@ Once the search space has been reduced, I then use the back track search to eith
 Further optimisations could be made by including the naked single/pair search when doing the Back Track Search. Unfortunately, time did not permit the inclusion this.
 The data structure’s used are a mix of lists, and dictionaries. I found that a list, performance wise was not producing any drawbacks. The only issue was membership discovery was slow when detecting missing numbers or updating other cells if they matched a certain index. For this, I used a dictionary to often save cells themselves, with an update vector to apply. Lastly, I found that reading the board into memory, and creating an OOP structure of the cells, units, and board, greatly helped the speed at which I could reference cells, reference units, and create helper functions. By creating a lot of the helper code, I found that I could try different approaches, quickly, and fail quickly without having to write lots and lots of code repeatedly.
 </P>
+
 ![GUI](GUI.jpg)
 ![Complete](GUI-CompleteSudoku.jpg)
+![GUI](https://user-images.githubusercontent.com/8123313/139666306-825b0ee8-263f-4e2c-948f-5dd633f22591.jpg)
