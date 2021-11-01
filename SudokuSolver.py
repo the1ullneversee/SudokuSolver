@@ -371,7 +371,7 @@ class Board():
 
 class SudokuPuzzles:
 
-    directory = "sudoku/data/"
+    directory = "sudoku\\data"
     puzzleFileNames = ["very_easy_puzzle.npy","easy_puzzle.npy","medium_puzzle.npy","hard_puzzle.npy"]
     puzzleSolutionNames = ["very_easy_solution.npy","easy_solution.npy","medium_solution.npy","hard_solution.npy"]
 
@@ -796,8 +796,8 @@ class SudokuPuzzles:
         timings = []
         
         for j in range(0,4):
-            mainSudoku = np.load(f"OMITTED"//{self.puzzleFileNames[j]}")
-            mainSudokuSolved = np.load(f"OMITTED"{self.puzzleSolutionNames[j]}")
+            mainSudoku = np.load(f"OMITTED//{self.puzzleFileNames[j]}")
+            mainSudokuSolved = np.load(f"OMITTED//{self.puzzleSolutionNames[j]}")
             print(f"{self.puzzleFileNames[j]} has been loaded into the variable sudoku")
             print(f"sudoku.shape: {mainSudoku.shape}, sudoku[0].shape: {mainSudoku[0].shape}, sudoku.dtype: {mainSudoku.dtype}")
             

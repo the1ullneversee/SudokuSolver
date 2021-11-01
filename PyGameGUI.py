@@ -12,7 +12,7 @@ class GUI():
         self.pygame.display.set_caption("Sudoku Solver!")
         # img = pygame.image.load('icon.png')
         # pygame.display.set_icon(img)
-        self.directory = "OMITTED"
+        self.directory = "sudoku\\data"
         self.puzzleFileNames = ["very_easy_puzzle.npy","easy_puzzle.npy","medium_puzzle.npy","hard_puzzle.npy"]
         self.puzzleSolutionNames = ["very_easy_solution.npy","easy_solution.npy","medium_solution.npy","hard_solution.npy"]
         self.mainSudokus = None
